@@ -5,11 +5,10 @@
 ```
 portfolio/
 ├── index.html                  ← Main HTML (all sections)
-├── src/
-│   ├── styles/
-│   │   └── main.css            ← All styles (glassmorphism, animations, responsive)
-│   └── components/
-│       └── main.js             ← All JavaScript (canvas, cursor, typewriter, 3D tilt)
+|
+│ ── main.css            ← All styles (glassmorphism, animations, responsive)
+│   
+│── main.js             ← All JavaScript (canvas, cursor, typewriter, 3D tilt)
 └── README.md
 ```
 
