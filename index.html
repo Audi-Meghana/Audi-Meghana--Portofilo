@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audi Meghana | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- BG CANVAS -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- FLOATING PARTICLES -->
+<div class="particles-container" id="particles"></div>
+
+<!-- NAV -->
+<nav class="glass-nav" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span> Available for Opportunities
+    </div>
+    <h1 class="hero-name">
+      <span class="name-line" data-text="AUDI">MEGHANA</span>
+      <span class="name-line accent" data-text="MEGHANA">AUDI</span>
+    </h1>
+    <div class="hero-title">
+      <span class="title-prefix">&gt;</span>
+      <span class="typewriter" id="typewriter"></span>
+      <span class="cursor-blink">_</span>
+    </div>
+    <p class="hero-desc">CSE Student · MERN Stack · AI Enthusiast · Problem Solver</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">
+        <span>View Projects</span>
+        <div class="btn-glow"></div>
+      </a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2">0</span>
+        <span class="stat-label">Internships</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="8">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-3d">
+    <div class="orb-container">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="code-float">
+        <div class="code-line"><span class="kw">const</span> <span class="var">dev</span> = {</div>
+        <div class="code-line pl">&nbsp;&nbsp;<span class="key">name</span>: <span class="str">"Meghana"</span>,</div>
+        <div class="code-line pl">&nbsp;&nbsp;<span class="key">stack</span>: <span class="str">"MERN"</span>,</div>
+        <div class="code-line pl">&nbsp;&nbsp;<span class="key">passion</span>: <span class="str">"Building"</span></div>
+        <div class="code-line">};</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 // ABOUT</span>
+      <h2 class="section-title">Who <span class="accent">I Am</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card">
+        <div class="about-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner">AM</div>
+        </div>
+        <div class="about-info">
+          <h3>Audi Meghana</h3>
+          <p class="about-role">Full Stack Developer & AI Enthusiast</p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <span>India</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <span>B.Tech CSE, JNTUA · CGPA 8.51</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">📧</span>
+              <span>audimeghana@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">📱</span>
+              <span>+91 8919134240</span>
+            </div>
+          </div>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/audi-m-644431254/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+            <a href="https://github.com/Audi-Meghana" target="_blank" class="social-btn github">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-text glass-card">
+        <p>Computer Science Engineering student with <span class="highlight">hands-on experience in full-stack development and AI</span>. Skilled in the MERN stack, API design, database management, and creating interactive user interfaces.</p>
+        <p>Quick learner with strong problem-solving skills, eager to apply technical knowledge to real-world projects that make a difference.</p>
+        <div class="cert-badges">
+          <div class="cert-badge">
+            <span class="cert-icon">🏆</span>
+            <div>
+              <span class="cert-name">Web Development</span>
+              <span class="cert-issuer">Coursera · Sep 2023</span>
+            </div>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-icon">🏆</span>
+            <div>
+              <span class="cert-name">Python for Data Science</span>
+              <span class="cert-issuer">IBM · May 2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- PAPER PUBLISHED -->
+        <div class="paper-card">
+          <div class="paper-icon">📄</div>
+          <div class="paper-info">
+            <span class="paper-label">PUBLISHED RESEARCH</span>
+            <a href="https://zenodo.org/records/19107048" target="_blank" class="paper-title">View Published Paper →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 // SKILLS</span>
+      <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category glass-card">
+        <div class="category-header">
+          <span class="cat-icon">🎨</span>
+          <h3>Frontend</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-chip" style="--clr:#f7df1e">JavaScript</div>
+          <div class="skill-chip" style="--clr:#61dafb">React.js</div>
+          <div class="skill-chip" style="--clr:#e34f26">HTML5</div>
+          <div class="skill-chip" style="--clr:#264de4">CSS3</div>
+        </div>
+        <div class="skill-bars">
+          <div class="bar-item"><span>React.js</span><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+          <div class="bar-item"><span>JavaScript</span><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+          <div class="bar-item"><span>HTML/CSS</span><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category glass-card">
+        <div class="category-header">
+          <span class="cat-icon">⚙️</span>
+          <h3>Backend</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-chip" style="--clr:#68a063">Node.js</div>
+          <div class="skill-chip" style="--clr:#47a248">MongoDB</div>
+          <div class="skill-chip" style="--clr:#336791">SQL</div>
+        </div>
+        <div class="skill-bars">
+          <div class="bar-item"><span>Node.js</span><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+          <div class="bar-item"><span>MongoDB</span><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+          <div class="bar-item"><span>SQL</span><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category glass-card">
+        <div class="category-header">
+          <span class="cat-icon">🤖</span>
+          <h3>AI / Other</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-chip" style="--clr:#3776ab">Python</div>
+          <div class="skill-chip" style="--clr:#ff6f00">ML</div>
+          <div class="skill-chip" style="--clr:#f05032">Git</div>
+          <div class="skill-chip" style="--clr:#00c7b7">APIs</div>
+        </div>
+        <div class="skill-bars">
+          <div class="bar-item"><span>Python</span><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+          <div class="bar-item"><span>Machine Learning</span><div class="bar-track"><div class="bar-fill" data-w="65"></div></div></div>
+          <div class="bar-item"><span>API Design</span><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">03 // PROJECTS</span>
+      <h2 class="section-title">Featured <span class="accent">Work</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+       <!--Project 1-->
+       <div class="project-card glass-card" data-tilt>
+        <div class="project-num">03</div>
+        <div class="project-glow"></div>
+        <div class="project-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Full Stack</span>
+        </div>
+        <h3 class="project-title">TrustHive</h3>
+        <p class="project-subtitle">Online Store Rating Platform</p>
+        <p class="project-desc">A community-driven platform for rating and reviewing online stores. Users can discover trusted stores, leave reviews, and help others make informed shopping decisions.</p>
+        <div class="project-features">
+          <span>⭐ Ratings</span>
+          <span>💬 Reviews</span>
+          <span>🏪 Stores</span>
+        </div>
+        <div class="project-links">
+          <a href="https://store-plus-rating-website-1.onrender.com/" target="_blank" class="project-link live">
+            <span>Live Demo</span> ↗
+          </a>
+        </div>
+      </div>
+      <!--Project 2 -->
+      <div class="project-card glass-card" data-tilt>
+        <div class="project-num">01</div>
+        <div class="project-glow"></div>
+        <div class="project-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Node.js</span>
+        </div>
+        <h3 class="project-title">DocSpot</h3>
+        <p class="project-subtitle">Online Doctor Consultation Platform</p>
+        <p class="project-desc">Full-stack healthcare platform with user registration/login, real-time doctor consultations, appointment booking, doctor profiles, and scheduling — backed by REST APIs and MongoDB.</p>
+        <div class="project-features">
+          <span>🔐 Auth System</span>
+          <span>📅 Booking</span>
+          <span>💬 Real-time</span>
+        </div>
+        <div class="project-links">
+          <a href="https://docspot-medicarebook.netlify.app/" target="_blank" class="project-link live">
+            <span>Live Demo</span> ↗
+          </a>
+        </div>
+      </div>
+
+      
+      <!-- Project 3 -->
+      <div class="project-card glass-card" data-tilt>
+        <div class="project-num">02</div>
+        <div class="project-glow"></div>
+        <div class="project-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">CSS</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <h3 class="project-title">EduPath</h3>
+        <p class="project-subtitle">Career Guidance Website</p>
+        <p class="project-desc">Platform helping students post-10th grade explore courses and career paths. Features interactive UI, responsive design, and organized course data for seamless navigation.</p>
+        <div class="project-features">
+          <span>🎓 Career Paths</span>
+          <span>📱 Responsive</span>
+          <span>🔍 Browse</span>
+        </div>
+        
+      </div>
+
+      
+      <!-- Project 4 -->
+      <div class="project-card glass-card" data-tilt>
+        <div class="project-num">04</div>
+        <div class="project-glow"></div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Game Dev</span>
+          <span class="tag">Logic</span>
+        </div>
+        <h3 class="project-title">Memory Puzzle</h3>
+        <p class="project-subtitle">3-Level Python Game</p>
+        <p class="project-desc">A 3-level memory puzzle game built in Python with increasing difficulty, designed to enhance problem-solving and logical thinking skills through gameplay.</p>
+        <div class="project-features">
+          <span>🧠 3 Levels</span>
+          <span>🎮 Game Logic</span>
+          <span>📈 Progression</span>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience-section section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">04 // EXPERIENCE</span>
+      <h2 class="section-title">My <span class="accent">Journey</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item" data-side="left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-header">
+            <span class="timeline-date">May 2025 – Jul 2025</span>
+            <span class="timeline-badge intern">Internship</span>
+          </div>
+          <h3>Full Stack Developer Intern</h3>
+          <p class="timeline-company">SmartBridge</p>
+          <ul class="timeline-points">
+            <li>Built web apps using MERN stack with responsive UI and backend APIs</li>
+            <li>Developed user authentication, data management & UI responsiveness</li>
+            <li>Gained hands-on experience in end-to-end development workflows</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>MERN</span><span>REST API</span><span>Auth</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-header">
+            <span class="timeline-date">May 2024 – Jul 2024</span>
+            <span class="timeline-badge ai">AI Intern</span>
+          </div>
+          <h3>AI Intern</h3>
+          <p class="timeline-company">Edunet Foundation</p>
+          <ul class="timeline-points">
+            <li>Conducted burnout analysis using ML for data-driven insights</li>
+            <li>Applied Python for data preprocessing and model development</li>
+            <li>Identified burnout patterns using AI techniques</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Python</span><span>ML</span><span>Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="left">
+        <div class="timeline-dot edu"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-header">
+            <span class="timeline-date">2023 – 2026</span>
+            <span class="timeline-badge edu">Education</span>
+          </div>
+          <h3>B.Tech — Computer Science Engineering</h3>
+          <p class="timeline-company">JNTUA College of Engineering, Pulivendula</p>
+          <p class="cgpa">CGPA: <strong>8.51</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">05 // CONTACT</span>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info glass-card">
+        <h3>Let's Build Something <span class="accent">Amazing</span></h3>
+        <p>I'm currently open to Full Stack Developer roles, internships, and freelance projects. Drop a message and I'll get back to you!</p>
+        <div class="contact-items">
+          <a href="mailto:audimeghana@gmail.com" class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-value">audimeghana@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+918919134240" class="contact-item">
+            <div class="ci-icon">📱</div>
+            <div>
+              <span class="ci-label">Phone</span>
+              <span class="ci-value">+91 8919134240</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <span class="ci-label">Location</span>
+              <span class="ci-value">India</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/audi-m-644431254/" target="_blank" class="social-icon">in</a>
+          <a href="https://github.com" target="_blank" class="social-icon">gh</a>
+          <a href="https://zenodo.org/records/19107048" target="_blank" class="social-icon">📄</a>
+        </div>
+      </div>
+      <div class="contact-form glass-card">
+        <form id="contactForm">
+  <div class="form-group">
+    <label>Your Name</label>
+    <input type="text" name="from_name" placeholder="John Doe" required />
+  </div>
+
+  <div class="form-group">
+    <label>Your Email</label>
+    <input type="email" name="from_email" placeholder="john@example.com" required />
+  </div>
+
+  <div class="form-group">
+    <label>Subject</label>
+    <input type="text" name="subject" placeholder="Let's collaborate!" />
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary full-width">
+    <span>Send Message</span>
+    <div class="btn-glow"></div>
+  </button>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo"><span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span></div>
+    <p>Designed & Built by <span class="accent">Audi Meghana</span> · 2025</p>
+    <p class="footer-sub">Full Stack Developer · MERN Stack · AI Enthusiast</p>
+  </div>
+</footer>
+
+<script src="src/components/main.js"></script>
+</body>
+</html>
